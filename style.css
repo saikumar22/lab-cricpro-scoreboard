@@ -1,5 +1,48 @@
 /* Type your code here */
-
+body{
+	padding-left: 200px;
+	background-image: url(./assets/background-image1.png);
+	background-repeat: no-repeat;
+	background-position-x: 600px;
+	background-position-y: 140px;
+	display: inline-flexbox;
+}
+.logo{
+	margin-top: 60px;
+	margin-left: 1000px;
+}
+.heading{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: sans-serif;
+	margin-top: 30px;
+}
+.subheading{
+	font-size: 15px;
+	font-family: 'Times New Roman', Times, serif;
+	color: #808080;
+}
+.tbhead{
+	border-collapse: collapse;
+	padding:1px;
+	height: 37px;
+	border: 1px solid #D6D6D6;
+	font-size: 15px;
+}
+.tbbody{
+	background-color: #F5F5F5;
+	border-collapse: collapse;
+}
+tr{
+	border: 1px solid #D6D6D6;
+	height: 37px;
+	color: black;
+	background-color: #E8E8E8 ;
+}
+a{
+	text-decoration:none;
+	color : blue;
+}
 
 /* change the font family and spacing as per your project font */
 .footer{
@@ -12,5 +55,51 @@
 	font-size: 18px;
 	font-family: Nunito Sans;
     font-style: normal;
-    
 }
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 35%;
+	position: relative;
+	transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+	margin-top: 0;
+	color: orangered;
+	font-family: sans-serif;
+  }
+  .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+  }
+  .popup .close:hover {
+	color: orangered;
+  }
+  .popup .content {
+	max-height: 30%;
+	overflow: auto;
+  }
